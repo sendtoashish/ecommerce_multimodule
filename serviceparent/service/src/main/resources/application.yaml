@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/myntra
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root123
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    hikari:
+      poolName: ecommerce
+      initialization-fail-timeout: 0
+      connection-timeout: 50000
+      idleTimeout: 300000
+      maximum-pool-size: 10
+      max-lifetime: 900000
+      minimumIdle: 10
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081

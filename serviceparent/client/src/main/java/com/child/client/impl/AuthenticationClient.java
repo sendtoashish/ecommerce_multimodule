@@ -17,4 +17,6 @@ public class AuthenticationClient implements IAuthenticationClient {
 
         return JsonUtility.convertJsonToObject(response, HealthCheckResponse.class);
     }
+
+
 }
